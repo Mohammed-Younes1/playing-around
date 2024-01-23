@@ -5,56 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'> -->
   </head>
   <body>
     <!-- first part -->
     <div class="first-part">
       <div class="navbar">
-        <img class="img-logo" alt="logo" />
+        <div class="logo" >
+            <a href="">Arsha</a>
+        </div>
 
         <nav class="navs">
-          <a>Home</a>
-          <a>About</a>
-          <a>Services</a>
-          <a>Protfolio</a>
-          <a>Team</a>
-          <a>Drop Down</a>
-          <a>Content</a>
-          <button>Get started</button>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Services</a>
+          <a href="">Protfolio</a>
+          <a href="">Team</a>
+          <a href="">Drop Down</a>
+          <a href="">Content</a>
+          <button class="button-1">Get started</button>
         </nav>
       </div>
-      <!-- first part content -->
-      <div class="first-content">
-        <div class="first-content-left">
-          <h1>Better Solutions For Your Business</h1>
+    </div>
+    <!-- first part content -->
+    <div class="first-content">
+      <div class="first-content-left">
+        <h1>Better Solutions For Your Business</h1>
 
-          <p>
-            We are team of talented designers making websites with Bootstrap
-          </p>
-          <div>
-            <button>Get Started</button>
-            <button>Watch video</button>
-          </div>
+        <h2>We are team of talented designers making websites with Bootstrap</h2>
+        <div class="first-content-left-buttons">
+          <button class="button-2">Get Started</button>
+          <span class="span-1"><i class="gg-play-button-o"></i>Watch video</span>
         </div>
-        <div class="first-content-right"></div>
       </div>
-      <!-- logo-bar -->
-      <div class="logo-bar">
-        logo bar is here--------------------------------
+      <div class="first-content-right">
+        <img src="/img/hero-img.png" alt="pic"/>
       </div>
-      <!-- second part -->
-      <div class="second-part">
-        <h1>About Us</h1>
-        <div class="second-part-left">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <ul>
-                <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
-        </div>
-        <div class="second-part-right"></div>
+    </div>
+    <!-- logo-bar -->
+    <div class="logo-bar">logo bar is here--------------------------------</div>
+    <!-- second part -->
+    <div class="second-part">
+      <h1>About Us</h1>
+      <div class="second-part-left">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <ul>
+          <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+          <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
+          <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+        </ul>
       </div>
+      <div class="second-part-right">
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>learn more</button>
+      </div>
+    </div>
+    <!-- third-part -->
+    <div class="third-part">
+      <h3>Contact</h3>
+      <p>
+        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+        sit in iste officiis commodi quidem hic quas.
+      </p>
+      <form action="" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email"> Your Email</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <lable for="subject">Subject</lable>
+        <input type="text" id="subject" name="subject" required />
+        <br />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required> </textarea>
+        <br />
+        <button type="submit" value="Submit">Send Message</button>
+      </form>
     </div>
   </body>
 </html>
