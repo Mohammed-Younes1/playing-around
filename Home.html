@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Page Title</title>
+    <title>Arsha</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'> -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -13,7 +13,7 @@
     <div class="first-part">
       <div class="navbar">
         <div class="logo">
-          <a href="">Arsha</a>
+          <a href="">ARSHA</a>
         </div>
 
         <nav class="navs">
@@ -58,7 +58,7 @@
     </div>
     <!-- second part -->
     <div class="second-part">
-      <h1>ABOUT US</h1>
+      <h1 class="header-with-line">ABOUT US</h1>
       <div class="second-part-div">
         <div class="second-part-left">
           <p>
@@ -66,9 +66,33 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <ul class="list-icon-better">
-            <li><iconify-icon icon="ri:check-double-line" style="color: #47b2e4;" width="20" height="20"></iconify-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            <li><iconify-icon icon="ri:check-double-line" style="color: #47b2e4;" width="20" height="20"></iconify-icon>Duis aute irure dolor in reprehenderit in voluptate velit</li>
-            <li><iconify-icon icon="ri:check-double-line" style="color: #47b2e4;" width="20" height="20"></iconify-icon>Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            <li>
+              <iconify-icon
+                icon="ri:check-double-line"
+                style="color: #47b2e4"
+                width="20"
+                height="20"
+              ></iconify-icon
+              >Ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+            <li>
+              <iconify-icon
+                icon="ri:check-double-line"
+                style="color: #47b2e4"
+                width="20"
+                height="20"
+              ></iconify-icon
+              >Duis aute irure dolor in reprehenderit in voluptate velit
+            </li>
+            <li>
+              <iconify-icon
+                icon="ri:check-double-line"
+                style="color: #47b2e4"
+                width="20"
+                height="20"
+              ></iconify-icon
+              >Ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </li>
           </ul>
         </div>
         <div class="second-part-right">
@@ -85,28 +109,71 @@
     </div>
     <!-- third-part -->
     <div class="third-part">
-      <h3>Contact</h3>
+      <h1 class="header-with-line">CONTACT</h1>
       <p>
         Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
         aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
         quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
         sit in iste officiis commodi quidem hic quas.
       </p>
-      <form action="" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-        <br />
-        <label for="email"> Your Email</label>
-        <input type="email" id="email" name="email" required />
-        <br />
-        <lable for="subject">Subject</lable>
-        <input type="text" id="subject" name="subject" required />
-        <br />
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required> </textarea>
-        <br />
-        <button type="submit" value="Submit">Send Message</button>
-      </form>
+      <div class="contact-content">
+        <div class="third-left">
+          <div class="loaction-info">
+            <div class="info-cell">
+              <i class="gg-pin"></i>
+              <div class="details">
+                <h3>Location:</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+
+            <div class="info-cell">
+              <i class="gg-mail"></i>
+              <div class="details">
+                <h3>Email:</h3>
+                <p>info@example.com</p>
+              </div>
+            </div>
+
+            <div class="info-cell">
+              <i class="gg-smartphone"></i>
+              <div class="details">
+                <h3>Call:</h3>
+                <p>+1 5589 55488 55s</p>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <img src="/img/map.png" />
+          </div>
+        </div>
+        <div class="third-right">
+          <form action="" method="post">
+            <div class="name-email">
+              <div class="form-fix">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-fix">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-fix">
+              <lable for="subject">Subject</lable>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-fix">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required>
+              </textarea>
+            </div>
+            <div class="fix-button">
+            <button type="submit" value="Submit" class="button-2">Send Message</button>
+          </div>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
