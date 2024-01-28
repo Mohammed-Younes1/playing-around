@@ -24,7 +24,7 @@
   left: 10px;
 }
 .gg-play-button-o:hover {
-  border-color: #47b2e4; /* Color change on hover */
+  border-color: #47b2e4;
 }
 /* ----- pin icon*/
 .gg-pin {
@@ -102,12 +102,9 @@
   background-color: #209dd8;
 }
 
-
-
-
 /* menu option*/
 .gg-menu {
-  transform: scale(var(--ggs,1))
+  transform: scale(var(--ggs, 1));
 }
 .gg-menu,
 .gg-menu::after,
@@ -124,10 +121,10 @@
 .gg-menu::before {
   content: "";
   position: absolute;
-  top: -6px
+  top: -6px;
 }
 .gg-menu::after {
-  top: 6px
+  top: 6px;
 }
 /* --------------- */
 .first-part {
@@ -137,7 +134,9 @@
   padding-bottom: 10px;
   font-family: "Open Sans", sans-serif;
 }
-.menu{display: none;}
+.menu {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -247,15 +246,14 @@
   font-weight: 400;
 }
 @keyframes moveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-15px);
   }
 }
-
-
 
 .first-content-right {
   flex: 1;
@@ -268,7 +266,6 @@
   height: 400px;
   animation: moveUpDown 4s ease-in-out infinite;
 }
-
 
 .logo-bar {
   padding-left: 10%;
@@ -292,10 +289,9 @@
   transition: filter 0.8s ease;
   /* margin-top: 10px; */
   display: block;
-  max-width: 100%; /* Ensure images don't exceed the width of their container */
-  max-height: 100%; /* Ensure images don't exceed the height of their container */
-  margin: auto; 
-  
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 .logo-bar img:hover {
   filter: grayscale(0%) invert(0%);
@@ -316,8 +312,7 @@
   display: flex;
   justify-content: center;
   padding-top: 40px;
-  position: relative; /* Add position: relative to enable positioning of pseudo-element */
-  padding-bottom: 15px;
+  position: relative; 
 }
 .header-with-line::before {
   content: "";
@@ -451,6 +446,7 @@
   max-width: 450px;
   width: 300px;
 }
+/* ---------max to 1135--------- */
 @media (min-width: 1135px) and (max-width: 2000px) {
   .map img {
     max-width: 450px;
@@ -475,12 +471,11 @@ label {
   padding-top: 20px;
 }
 
-
-.fix-button{
+.fix-button {
   margin-top: 20px;
   display: flex;
-justify-content: center;
-padding-bottom: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 input {
   height: 50px;
@@ -498,63 +493,58 @@ input {
   /* width: 285px; */
   height: 50px;
 }
-textarea{
+textarea {
   width: 100%;
   height: 300px;
 }
 
 @media screen and (max-width: 1150px) {
-  .first-content-right img{
+  .first-content-right img {
     width: 400px;
     height: 350px;
     padding-bottom: 30px;
-      }
-    
+  }
 }
-
-@media (max-width: 990px) and (min-width: 768px){
-  .first-content-right{
-height: 40%;
+/* ------------------990 to 768------------------ */
+@media (max-width: 990px) and (min-width: 768px) {
+  .first-content-right {
+    height: 40%;
   }
 
-.logo-bar{
-  grid-template-columns: repeat(3, minmax(0, 2fr));
-grid-template-rows: repeat(2, minmax(0, 1fr));
-height: auto;
-align-items: center; 
-justify-content: space-evenly;
-padding-bottom: 25px;
-
-}
-.logo-bar img{
-  display: flex;
-align-items: center; 
-justify-content: center; 
-}
-
+  .logo-bar {
+    grid-template-columns: repeat(3, minmax(0, 2fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+  }
+  .logo-bar img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 990px) {
-  .navs{
-    display:none;
+  .navs {
+    display: none;
   }
   .navbar {
     display: flex;
     justify-content: space-between;
   }
-  .menu{
-    display:flex;
+  .menu {
+    display: flex;
     align-items: center;
     margin-right: 10%;
   }
   .logo a {
     margin-left: 25%;
-
   }
-  .first-content{
+  .first-content {
     flex-direction: column;
     align-items: center;
-    
   }
   .first-content-left {
     padding-left: 20%;
@@ -571,25 +561,25 @@ justify-content: center;
     flex-direction: column;
   }
   .button-3 {
-    width:130px;
+    width: 130px;
   }
-  .contact-content{
+  .contact-content {
     flex-direction: column;
   }
   .third-left {
     width: auto;
-    flex:1;
+    flex: 1;
     padding-bottom: 30px;
   }
-  .info-cell{
+  .info-cell {
     /* justify-content: center; */
   }
   .third-right {
-    flex:1;
+    flex: 1;
     margin-top: 30px;
   }
   .map img {
-    width:100%;
+    width: 100%;
   }
   /* .logo-bar{
     grid-template-columns: repeat(3, minmax(0, 2fr));
@@ -604,24 +594,20 @@ justify-content: space-evenly;
 align-items: center; 
 justify-content: center; 
   } */
-
 }
-
-@media (max-width: 768px) and (min-width: 10px){
-
-  .logo-bar{
+/* ---------------- smallest size---------------- */
+@media (max-width: 768px) and (min-width: 10px) {
+  .logo-bar {
     grid-template-columns: repeat(2, minmax(0, 2fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  height: auto;
-  align-items: center; /* Center items vertically */
-justify-content: space-evenly; /* Distribute items horizontally with equal space */
-
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    height: auto;
+    align-items: center; 
+    justify-content: space-evenly;
   }
-  .logo-bar img{
+  .logo-bar img {
     display: flex;
-align-items: center; 
-justify-content: center; 
-padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
   }
 }
-
